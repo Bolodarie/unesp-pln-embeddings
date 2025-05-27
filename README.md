@@ -33,4 +33,5 @@ O sistema funciona da seguinte maneira:
 ### Compilação
 Recomenda-se o uso de um Makefile para facilitar a compilação. Um exemplo simples de comando de compilação com g++ seria:
 ```bash
-g++ -std=c++11 main.cpp grafo.cpp nodes.cpp train.cpp mymath.cpp -o cbow_graph_embeddings -Wall -Wextra -O2
+g++ -std=c++11 -g -O0     main.cpp     train.cpp     grafo.cpp     mymath.cpp     nodes.cpp   -o main
+./main
