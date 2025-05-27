@@ -4,6 +4,7 @@
 #ifndef NODES_H
 #define NODES_H
 
+// Usando using namespace std; conforme o original, embora seja preferível qualificar no header.
 using namespace std;
 
 class node{
@@ -20,8 +21,9 @@ public:
     node* operator[](int k);
     //Operator == para checar palavras iguais
     bool operator==(string S);
-    
+
     void connect(node* n);
+    // Função de normalização (corrigida para L2, mas não usada ativamente no treino principal)
     void normalize();
 };
 
